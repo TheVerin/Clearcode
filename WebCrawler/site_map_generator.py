@@ -42,5 +42,9 @@ def site_map(url_base: str) -> dict:
             d_main[link] = help_dict
     return d_main
 
-print(site_map('http://0.0.0.0:8000'))
 
+your_website = site_map('https://clearcode.pl')
+
+"""When you will be checking this, you will have to wait some time. This algorithm is not the fastest one :)"""
+
+print(your_website)

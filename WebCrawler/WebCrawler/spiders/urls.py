@@ -11,13 +11,13 @@ class UrlsSpider(scrapy.Spider):
     name = "urls"
 
     # List of urls which we want to map
-    start_urls = ['http://0.0.0.0:8000']
+    start_urls = ['https://clearcode.pl']
 
     def parse(self, response):
         """looking for url adresses of all subsites of domain"""
 
         # You have to initialize your base url adress
-        domain = 'http://0.0.0.0:8000'
+        domain = 'https://clearcode.pl'
 
         # Taking the information about url of the site
         yield {'url': response.request.url}
