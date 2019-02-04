@@ -10,7 +10,7 @@ Tasks for Python internship
    
    
 2. WebCrawler
-   To use site_map function it is needed to:
+   To use site_map() function (from site_map_generator.py) it is needed to:
     - remove urls.json file if it exist in WebCrawler directory,
     - set the name of mapping website (url adress) in WebCrawler/spiders/urls.py into 
       start_urls = ['name of your domain'] and domain = ['name of your domain'] 
@@ -18,4 +18,7 @@ Tasks for Python internship
     - in command prompt write and execute: scrapy crawl urls -o urls.json
     
    Then you can use site_map() :)
+   Right now your website is given there. If you want to see map of it just run site_map('https://clearcode.pl').
+   But be patient, whole process is quite slow :)
+   
    If you want to map another site you have to do all steps from list above.
