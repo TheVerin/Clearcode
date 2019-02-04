@@ -1,8 +1,0 @@
-[
-{"url": "http://0.0.0.0:8000"},
-{"url": "http://0.0.0.0:8000/site.html"},
-{"url": "http://0.0.0.0:8000/example.html"},
-{"url": "http://0.0.0.0:8000/site/subsite.html"},
-{"url": "http://0.0.0.0:8000"},
-{"url": "http://0.0.0.0:8000/site/other_site.html"}
-]

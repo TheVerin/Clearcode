@@ -1,0 +1,29 @@
+Base framework is scrappy so here is documentation only for new features.
+
+
+WebCrawler:
+
+    WebCrawler/spiders/urls.py:
+
+        parse(response) -> generating dict of all urls occured in domain
+
+        Arguments:
+            response from server
+
+        Returns:
+            Nothing
+
+
+    site_map_generator.py:
+
+        site_map(url_base: str) -> creating dict which contains title and set of links from the page and add it into
+                                   main dictionary (it contains dicts for each page)
+
+        Arguments:
+            url_base -  url adress of the website which we would map
+
+        Returns:
+            d_main - main dictionary which contains title and all set of links for each site
+                     for example - {site_1: {'title': 'some_title', 'links':{link_1, link_2}},
+                                    site_2: {'title': 'some_title_2', 'links':{link_3, link_4}}
+                                    }

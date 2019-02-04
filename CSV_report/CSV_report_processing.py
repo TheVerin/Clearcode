@@ -1,4 +1,5 @@
-"""Required tasks:
+"""
+Required tasks:
     - import the data,
     - check if the data are able to process,
     - change data into YYYY-MM-DD format,
@@ -6,7 +7,12 @@
     - create column contains country code,
     - add column contains number of clicks,
     - remove country name and CTR column,
-    - save as UTF-8 CSV file with Unix ending"""
+    - save as UTF-8 CSV file with Unix ending
+
+    I know that I should add function which change names of columns but unfortunately I don't know them.
+    In production model I would add that feature if it will be necessary.
+
+"""
 
 
 import pandas as pd

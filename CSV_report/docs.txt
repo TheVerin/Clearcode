@@ -1,0 +1,40 @@
+CSV_report_processing.py:
+
+    importing(data_path: str) -> importing the data from given path
+    Arguments:
+        data_path - path to the folder with data,
+                    at the end there has to be name of dataset with end (for example: directory/directory/data.csv)
+
+    Returns:
+        dataset as pandas DataFrame or error (when dataset can not be imported)
+
+
+    checking(data_frame) -> checking DatFrame object for critical errors (all are shown in README.md)
+    Arguments:
+        data_frame - dataset as pandas DataFrame object
+
+    Returns:
+         True (if there is no errors) or False
+
+
+
+    preprocessing(data_frame) -> changing DataFrame object by requited tasks (all task are listed at the beginning of
+                                 the script)
+    Arguments:
+        data_frame - dataset as pandas DataFrame object
+
+    Returns:
+        DataFrame object after:
+                - change data (it means time) into YYYY-MM-DD format,
+                - filling 'Unknown' counrty as XXX
+                - create column contains country code,
+                - add column contains number of clicks,
+                - remove country name and CTR column,
+
+
+    saving(data_frame) -> saving dataset as csv file in UTF-8 standard and Unix line endings
+    Arguments:
+        data_path - dataset as pandas DataFrame object
+
+    Returns:
+        nothing

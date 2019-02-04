@@ -1,3 +1,13 @@
+"""
+Required task:
+    - create dictionary of each website -> {'title': title, 'links': set of links on the page}
+      and add it with url of website into main dictionary
+
+WARNING!
+Make sure that you have done all steps from README.md!
+
+"""
+
 import json
 from bs4 import BeautifulSoup
 import requests
@@ -33,3 +43,4 @@ def site_map(url_base: str) -> dict:
     return d_main
 
 print(site_map('http://0.0.0.0:8000'))
+
